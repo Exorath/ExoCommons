@@ -1,2 +1,2 @@
 # ExoCommons
-Exorath commons regarding spigot...
+Exorath commons regarding spigot and more!
