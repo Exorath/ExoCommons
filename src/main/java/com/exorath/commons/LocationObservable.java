@@ -24,5 +24,11 @@ import org.bukkit.Location;
  * Created by toonsev on 10/6/2016.
  */
 public interface LocationObservable {
+
+    /**
+     * An observable that emits the NPC's Location whenever it moves/teleports. This Observable completes when the entity despawns.
+     *
+     * @return an observable that emits the NPC's Location whenever it moves/teleports
+     */
     Observable<Location> getObservableLocation();
 }

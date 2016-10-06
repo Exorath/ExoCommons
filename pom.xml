@@ -22,7 +22,19 @@
 
     <groupId>com.exorath</groupId>
     <artifactId>ExoCommons</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
@@ -36,5 +48,4 @@
             <version>2.0.0-RC2</version>
         </dependency>
     </dependencies>
-
 </project>
