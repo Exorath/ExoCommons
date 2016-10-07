@@ -16,20 +16,20 @@
 
 package com.exorath.commons;
 
-
 import io.reactivex.Observable;
-import org.bukkit.Location;
+import org.bukkit.event.player.PlayerInteractEvent;
 
 /**
- * An interface that can be applied to a moveable subject, this interface will emit an event whenever the subject moves.
- * Created by toonsev on 10/6/2016.
+ * An interface that can be applied to a clickable subject, this interface will emit an event whenever the subject is clicked.
+ * Created by toonsev on 10/7/2016.
  */
-public interface LocationObservable {
+public interface InteractObservable {
 
     /**
-     * An observable that emits the NPC's Location whenever it moves/teleports. This Observable completes when the entity despawns.
+     * Returns a hot observable that emits an event whenever the subject is interacted with by a player.
+     * This observable may complete when the subject dies/despawns.
      *
-     * @return an observable that emits the NPC's Location whenever it moves/teleports
+     * @return a hot observable that emits an event whenever the subject is interacted with by a player
      */
-    Observable<Location> getObservableLocation();
+    Observable<PlayerInteractEvent> getObservableInteraction();
 }
