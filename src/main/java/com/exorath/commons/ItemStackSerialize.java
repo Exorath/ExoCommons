@@ -63,7 +63,7 @@ public class ItemStackSerialize {
         Material mat = Material.getMaterial(object.get("material").getAsString());
 
         int amount = object.has("amount") ? object.get("amount").getAsInt() : 1;
-        short durability = object.has("amount") ? object.get("durability").getAsShort() : 0;
+        short durability = object.has("durability") ? object.get("durability").getAsShort() : 0;
         ItemStack item = new ItemStack(mat, amount, durability);
         ItemMeta meta = item.getItemMeta();
         if (object.has("displayName"))
